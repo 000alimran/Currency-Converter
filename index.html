@@ -28,7 +28,9 @@
                 <select 
                     id="from-currency" 
                     class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500"
-                ></select>
+                >
+                    <option value="" disabled selected>Select a currency</option>
+                </select>
             </div>
             
             <!-- To Currency -->
@@ -37,8 +39,16 @@
                 <select 
                     id="to-currency" 
                     class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500"
-                ></select>
+                >
+                    <option value="" disabled selected>Select a currency</option>
+                </select>
             </div>
+        </div>
+
+        <!-- Selected Currency Details -->
+        <div class="selected-currency flex items-center mt-4">
+            <img id="selected-flag" src="" alt="Flag" class="w-8 h-5 mr-2 hidden">
+            <span id="selected-currency-name" class="text-gray-700"></span>
         </div>
 
         <!-- Convert Button -->
@@ -48,7 +58,9 @@
         >
             Convert
         </button>
-
+        <img id="selected-flag" src="" alt="Flag" class="w-8 h-5 mr-2 hidden">
+        <span id="selected-currency-name" class="text-gray-700"></span>
+        
         <!-- Result Section -->
         <div id="result" class="text-center text-lg font-semibold text-gray-800 mt-4"></div>
     </div>
